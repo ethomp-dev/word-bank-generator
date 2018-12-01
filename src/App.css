@@ -1,0 +1,105 @@
+.App {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+}
+
+.App__title {
+    margin-bottom: 1%;
+    font-size: 1.5em;
+}
+
+.App__subtitle {
+    margin-top: 0;
+    font-size: 1.15em;
+    color: grey;
+    font-weight: normal;
+}
+
+.App__content {
+    margin-bottom: 2.5%;
+    min-height: 200px;
+}
+
+.App__text {
+    cursor: pointer;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.App__field {
+    display: block;
+    text-align: left;
+}
+
+.App__label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.App__cta {
+    float: right;
+    cursor: pointer;
+    margin-top: 0.25em;
+    color: #2699FB;
+    font-size: 0.75em;
+}
+
+.App__textarea {
+    width: 100%;
+    height: 200px;
+    resize: vertical;
+    font-family: 'Circular STD', sans-serif;
+    font-size: 1em;
+}
+
+.App__textarea.short {
+    height: 100px;
+}
+
+.App__word--selected {
+    color: #2699FB;
+    text-decoration: underline;
+}
+
+.App__button {
+    padding: 5px 20px;
+    width: 30%;
+    border: none;
+    border-radius: 3px;
+    font-size: 1em;
+}
+
+.App__button.primary {
+    border-bottom: 3px solid #0275d7;
+    background: #2699FB;
+    color: white;
+}
+
+.App__button.secondary {
+    border-bottom: 3px solid #a8a8a8;
+    background: #cfcfcf;
+    color: #333;
+}
+
+.App__button:disabled {
+    border-bottom: 3px solid #cfcfcf;
+    background: #e8e8e8;
+    color: #b5b5b5;
+}
+
+.App__button:not(:last-of-type) {
+    margin-right: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+    .App {
+        width: 90%;
+    }
+
+    .App__button {
+        width: 47.5%;
+    }
+}
